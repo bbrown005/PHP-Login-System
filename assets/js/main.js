@@ -22,9 +22,31 @@ $(document)
             return false;
     }
 
-
     // Assuming the code gets this far, we can start the ajax process
     _error.hide();
+
+    $.ajax({
+        type: 'POST',
+        url: '/ajax/register.php',
+        data: dataObj,
+        dataType: 'json',
+        async: true,
+    })
+    .done(function ajaxDone(data) {
+        // Whatever data is 
+        console.log(data);
+        if(data.redirect !== undefined) {
+            window.locaiton = data.redirect;
+        }
+    })
+    .fail(function ajaxFailed(e) {
+        // This failed
+        console.log(e);
+    })
+    .always(function ajaxAlwaysDoThis(data) {
+        // Always do
+        console.log('Always');
+    })
 
     return false;
 })

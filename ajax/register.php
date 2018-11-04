@@ -13,12 +13,13 @@
         $return = [];
         
         // Make sure the user does not exist
-
+        
         // Make sure the user CAN be added AND is added
 
         // Return the proper inforamtion back to JavaScript to redirect us
 
         $return['redirect'] = '/dashboard.php';
+        $return['name'] = "Bryan Brown";
 
         echo json_encode($return, JSON_PRETTY_PRINT); exit;
     } else {

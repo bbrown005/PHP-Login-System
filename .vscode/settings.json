@@ -1,0 +1,6 @@
+{
+    "git.ignoreMissingGitWarning": true,
+    "php.suggest.basic": false,
+    "php.validate.executablePath": "D:/wamp64/bin/php/php7.2.10/php.exe",
+    "php.executablePath": "D:/wamp64/bin/php/php7.2.10/php.exe"
+}

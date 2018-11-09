@@ -4,7 +4,10 @@
 	define('__CONFIG__', true);
 	// Require the config
 	require_once "inc/config.php"; 
+
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -16,7 +19,6 @@
 		<title>Page Title</title>
 
 		<base href="/" />
-		<!-- UIkit CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css" />
 	</head>
 
@@ -47,6 +49,7 @@
 					<div class="uk-margin">
 						<button class="button.uk-button.uk-botton-default" type="submit">Register</button>
 					</div>
+
 				</form>
 			</div>
 		</div>

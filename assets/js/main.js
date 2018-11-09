@@ -4,6 +4,7 @@ $(document)
 
     var _form = $(this);
     var _error = $(".js-error", _form);
+    
     var dataObj = {
         email: $("input[type='email']", _form).val(),
         password: $("input[type='password']", _form).val()
@@ -33,7 +34,6 @@ $(document)
     })
     .done(function ajaxDone(data) {
         // Whatever data is 
-        console.log(data);
         if(data.redirect !== undefined) {
             window.location = data.redirect;
         } else if(data.error !== undefined) {
@@ -41,8 +41,6 @@ $(document)
                 .text(data.error)
                 .show();
         }
-
-        alert(data.name);
     })
     .fail(function ajaxFailed(e) {
         // This failed

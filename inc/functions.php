@@ -10,7 +10,7 @@ function ForceLogin() {
 		}
 	}
 
-    function ForceDashbaord() {
+    function ForceDashboard() {
         if(isset($_SESSION['user_id'])) {
 			// The user is allowed here but redirect anyway
 			header("Location: /dashboard.php"); exit;
